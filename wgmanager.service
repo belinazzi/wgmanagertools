@@ -1,0 +1,10 @@
+[Unit]
+Description=Start WGMANAGER
+
+[Service]
+User=root
+WorkingDirectory=/var/wgmanager/wg-manager/wg-manager-backend
+ExecStart=/bin/bash /var/wgmanager/start.sh
+
+[Install]
+WantedBy=multi-user.target
